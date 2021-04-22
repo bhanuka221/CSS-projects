@@ -1,0 +1,32 @@
+.container{
+  background:pink;
+  height:250px;
+  width:250px;
+  padding:25px;
+  margin:50% auto;
+  
+  display:flex;
+  flex-direction:row; /* column can use. row means whole container is considered as a single row */
+  flex-wrap:nowrap; /*nowreap is the default. nowarp try to fit all the items in a single space by squecing item width */
+  
+  justify-content:center; /*center around main axis*/ 
+  align-items:center; /*strech is default. center items around secondary axis*/
+  
+  /*----------------------------*/
+  flex-wrap:wrap;
+  align-content:center; /* here consider all the items into the center as a whole group. see the difference by making 
+  
+    flex-wrap:nowrap;
+    align-items:center;
+  
+          AND
+  
+    flex-wrap:wrap;
+    align-content:center;
+  */
+}
+
+.item{
+  background:lightblue;
+  margin:7px;
+}
