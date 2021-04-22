@@ -1,0 +1,40 @@
+.container{
+  background:pink;
+  height:250px;
+  width:600px;
+  padding:25px;
+  margin:50% auto;
+  
+  display:flex;
+  flex-direction:row; 
+	align-items:flex-start;
+}
+
+.item{
+  background:lightblue;
+  margin:7px;
+}
+
+.one{
+	flex-grow:1;  /*default 0. Not grow when basis size exceed if it 0. */
+	flex-shrink:1; /*default 1. Shrink when shrink more than the basis size*/
+	flex-basis:250px; /*size of the item to be to shrink and grow*/
+	
+	order:3
+}
+.two{
+/* 	flex-grow:2;  
+	flex-shrink:1; 
+	flex-basis:250px; */
+	
+	flex:2 1 250px; /* shortcut for above three */
+	align-self:center /*align a single item. This will overide the align-items:strech default property*/;
+	order:1
+}
+.three{
+	flex-grow:0;  
+	flex-shrink:0; 
+	flex-basis:250px;
+	
+	order:2
+}
