@@ -1,0 +1,19 @@
+* There are 5 positions in CSS
+* Default uses static.
+  -> It says that follow the order. child-1 then child-2 etc.
+*relative position 
+  -> like static positioning but allow to do 4 things that static will not allow.
+      1.can change top,bottom,left and right of a element
+      2.It is relative to the static position (normal position where it's located in html page)
+      3.It overalp parent or other child elements. 
+      4.Typicaly tope,left,right,bottom not uses with relative as it hard to style
+*absolute
+  -> Use left,right,top,bottom with it.
+  -> completely remove the element from html workflow. Treat it as it not exists anymore
+  -> it will keep element absolute position relative to  parent element (make parent element some other than static(best use relative). then it will take as the relative postion for absolute)
+ *fixed
+  -> Fixed based on the entire HTML element. Nothing to do with parents
+  -> Stay in the same place when scroll
+ *sticky
+  -> Combination of both fixed and relative position into one
+  -> normaly play as relative. When scroll, it becomes fixed
